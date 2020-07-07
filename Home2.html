@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nivo Slider</title>
+<!--    <link rel="stylesheet" href="libs/nivoslider/themes/default/default.css"/>-->
+<!--    <link rel="stylesheet" href="libs/nivoslider/nivo-slider.css"/>-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/home2.css" type="text/css">
+</head>
+<body>
+<section class="section themam">
+
+    <div id="myCarousel" class="carousel slide" data-pause="false"><!--data-ride="carousel"-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!-- data-interval="6000" milliseconds NOT seconds! -->
+            <div class="carousel-item active" data-interval="6000">
+                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block text-left">
+                        <h1>Example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="12000">
+                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="24000">
+                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block text-right">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- alerts are for fun of it -->
+    <div class="alerts-container">
+
+        <div class="row">
+            <div id="timed-alert" class="alert alert-info animated tada" role="alert">
+                <span id="time"></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="libs/nivoslider/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    // Run this function once!
+    function slider() {
+        //  Get time (interval) from each carousel-item
+        var duration = $('div.carousel-inner')
+            .find(".carousel-item.active")
+            .data("interval");
+        var t;
+        clearTimeout(t);
+        $("#myCarousel").carousel('pause');
+        // Control direction using 'next or 'prev'
+        t = setTimeout("$('#myCarousel').carousel('next');", duration);
+
+        // BS Alert to show time to next slide, not needed
+        var sec = (duration/1000); // show seconds, not milliseconds
+        $("#time").html('Next slide in ' + sec + ' seconds');
+        $('#timed-alert').fadeIn(50).delay(2000).fadeOut(50);
+        // End Alert
+
+//	console.log('Next slide in ' + sec +' seconds');
+    }
+    slider();
+
+    // Run over and over...
+    $("#myCarousel").on("slid.bs.carousel", function() {
+        // setTimeout MUST see milliseconds NOT seconds
+        var duration = $(this)
+            .find("div.carousel-item.active")
+            .data("interval");
+        var t;
+        clearTimeout(t);
+        $("#myCarousel").carousel('pause');
+        // Control direction using 'next or 'prev'
+        t = setTimeout("$('#myCarousel').carousel('next');", duration);
+
+        $(".carousel-control-next").on("click", function() {
+            clearTimeout(t);
+            $('#timed-alert').hide();
+        });
+
+        $(".carousel-control-prev").on("click", function() {
+            clearTimeout(t);
+            $('#timed-alert').hide();
+        });
+
+        // BS Alert to show time to next slide, not needed
+        var sec = (duration/1000); // show seconds, not milliseconds
+        $("#time").html('Next slide in ' + sec + ' seconds');
+        $('#timed-alert').fadeIn(50).delay(2000).fadeOut(50);
+        // End Alert
+
+        //	console.log('Next slide in ' + sec +' seconds');
+
+    });
+
+</script>
+</body>
+</html>

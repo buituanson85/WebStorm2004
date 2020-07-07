@@ -1,0 +1,835 @@
+/*Trang chu*/
+
+@media (min-width: 992px) {
+    .container-fluid.header:before{
+        display: none;
+    }
+    .section.nav_2{
+        display: none;
+    }
+    .col-lg-auto.menu{
+        display: none;
+    }
+    .section.lastnew{
+        display: none;
+    }
+    .lastnew2{
+        display: none;
+    }
+    .carousel_ln.slide,.left.carousel-control_ln,.right.carousel-control_ln{
+        display: none;
+    }
+    #myCarousel{
+        display: none;
+    }
+}
+.burger {
+    position: absolute;
+    z-index: 10;
+    left: 4.65vw;
+    top: 1.5vw;
+    cursor: pointer;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+    padding: 0.6vw 0.1vw;
+}
+/* 175% */
+@media (max-width: 992px) {
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        /*max-height: 6.2vw;*/
+        min-height: 6.2vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        /*max-height: 6.2vw;*/
+        min-height: 6.2vw;
+    }
+    .d-flex.menu.border-right-vw{
+        /*max-height: 6.2vw;*/
+        min-height: 6.2vw;
+    }
+    .col-lg-auto.w-65.waorbo,.col-lg-5.text-center,.col-lg-2.text-center.shop{
+        display: none;
+        width: 0;
+    }
+    .img-responsive{
+        max-width: 50%;
+    }
+    .col-lg-auto.col-6.w-15.logo{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .fas{
+        font-size: 2vw;
+    }
+/*    bắt đầu thẻ video*/
+    #main-video_myBtn {
+        position: absolute;
+        bottom: 1vw;
+        right: 0;
+        width: 15%;
+    }
+/*    Bắt đầu find */
+    .d-flex.find{
+        flex-direction: column;
+    }
+    .col-lg-3.text-center.find_center{
+        margin: 3vw 0;
+    }
+    .find_span{
+        color: #FFFFFF;
+        font-size: 1.8vw;
+        min-font-size: 1.8vw;
+    }
+    .find_span_left{
+        color: #171717;
+        font-size: 1.8vw;
+        min-font-size: 1.8vw;
+    }
+    .main_find_left,.main_find_center,.main_find_right{
+        border: 0.1vw solid #FFFFFF;
+    }
+    .main_find_left:before,.main_find_center:before,.main_find_right:before{
+        display: none;
+    }
+    .main_find_left:hover,.main_find_center:hover,.main_find_right:hover{
+        color: #cccccc;
+        opacity: 0.3;
+    }
+/*    thẻ Nav  */
+    .section.nav_2{
+        display: block;
+    }
+    .nav_content{
+        display: none;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 95%;
+        width: 20%;
+        font-size: 30px;
+    }
+    .prev_arrow_2{
+        border-width: 0 0.5vw 0.5vw 0;
+        padding: 0.7vw;
+        position: absolute;
+        left: 7vw;
+        top: 3vw;
+    }
+    .prev_line_2{
+        width: 4.5vw;
+        border-width: 0.5vw 0 0 0;
+        position: absolute;
+        left: 7vw;
+        top: 3.7vw;
+    }
+
+    .next_arrow_2{
+        border-width: 0 0.5vw 0.5vw 0;
+        padding: 0.7vw;
+        position: absolute;
+        left: -3.2vw;
+        top: -0.7vw;
+    }
+    .next_line_2{
+        width: 4.5vw;
+        border-width: 0.5vw 0 0 0;
+        position: absolute;
+        left: -3.2vw;
+        top: 0;
+    }
+/*    Bắt đầu thẻ our music */
+    .main_ourworld{
+        flex-direction: column;
+        padding: 4.6% 3%;
+    }
+    .main_ourworld_content_left{
+        width: 100%;
+        padding-bottom: 20%;
+        background-image: linear-gradient(#171717 20%,white 80%)
+    }
+    .main_ourworld_content_right{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20%;
+        background-color: #FFFFFF;
+    }
+    .main_ourworld_content_left_bottom_content_craftsmanship{
+        color: #171717;
+        font-size: 150%;
+        font-weight: bolder;
+        margin-left: 10%;
+    }
+
+    .main_ourworld_content_right_bottom_content_partnerships{
+        color: #171717;
+        font-size: 150%;
+        font-weight: bolder;
+        margin-left: 10%;
+    }
+    .main_ourworld_content_left_bottom{
+        padding: 0 15%;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        text-align: center;
+    }
+    .main_ourworld_content_right_bottom{
+        padding: 0 15%;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        text-align: center;
+    }
+    .main_ourworld_content_left_bottom_content_craftsmanship{
+        margin: 0;
+    }
+    .main_ourworld_content_right_bottom_content_partnerships{
+        margin: 0;
+    }
+    .main_ourworld_content_left_bottom_content_span{
+        font-size: 80%;
+        font-weight: 600;
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+    .main_ourworld_content_right_bottom_content_span{
+        font-size: 80%;
+        font-weight: 600;
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+    .main_ourworld_content_left_bottom_content_learmore{
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+    .main_ourworld_content_right_bottom_content_learmore{
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        padding: 3% 35%;
+        font-weight: bolder;
+        font-size: 80%;
+    }
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        padding: 3% 35%;
+        font-weight: bolder;
+        font-size: 80%;
+    }
+/*    Bắt đầu thẻ muisic*/
+    .main_music{
+        padding: 4.6% 3% 10% 3%;
+    }
+    .main_music_bottom_content{
+        padding-top: 5%;
+    }
+    .main_music_bottom_content.levemore{
+        margin-top: 3vw;
+    }
+    .main_music_bottom_content_artmusic{
+        margin: 0;
+        font-size: 100%;
+        letter-spacing: 0.5vw;
+    }
+
+    .main_music_bottom_content_richardorlinski{
+        font-size: 150%;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-left: 0;
+    }
+
+    .main_music_bottom{
+        margin: 0;
+        letter-spacing: 0.5vw;
+    }
+    .main_music_bottom_content_link_learmore{
+        padding: 3% 32%;
+        font-weight: bolder;
+        font-size: 100%;
+        margin: 0;
+        border: 0.1vw solid #171717;
+    }
+/*    Bắt đầy thẻ last new*/
+    .header_lastnew{
+        padding: 4.5% 0;
+    }
+    .header_lastnew_span{
+        padding: 0 3vw;
+    }
+    .container_lastnew,.container_lastnew_main,.container_lastnew_main2,.container_lastnew_main3,.conten_learnmore{
+        display: none;
+    }
+    .fa_iconlastnew{
+        font-size: 2vw;
+    }
+/*    bắt đầu thẻ lasst neww 2*/
+    .lastnew2{
+        display: block;
+    }
+    .carousel_ln.slide,.left.carousel-control_ln,.right.carousel-control_ln{
+        display: block;
+    }
+    #myCarousel{
+        display: block;
+    }
+}
+
+/* 200% */
+@media (max-width: 768px) {
+    .container-fluid.header{
+        min-height: 7.2vw;
+    }
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        min-height: 7.2vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        min-height: 7.2vw;
+    }
+    .d-flex.menu.border-right-vw{
+        min-height: 7.2vw;
+    }
+    .container-fluid.header:before{
+        border: 0.08vw solid #000000;
+        padding: 1.6vw 1.6vw;
+        position: absolute;
+        left: 8vw;
+        top: 2vw;
+        border-radius: 0.3vw;
+    }
+    .burger{
+        position: absolute;
+        left: 4.5vw;
+        top: 2.2vw;
+    }
+    .burger__patty {
+        width: 4.2vw;
+        height: 3.25vw;
+        margin: 0 0 2.5vw 0;
+    }
+    .menu_heard{
+        margin-top: 7.2vw;
+    }
+    .img-responsive{
+        max-width: 55%;
+        /*max-height: 3.6vw;*/
+    }
+    .fas{
+        font-size: 2.5vw;
+    }
+/*    Bắt đầu thẻ video */
+    #main-video_myBtn {
+        position: absolute;
+        bottom: 1.2vw;
+        right: 0;
+        width: 18%;
+    }
+/*    Bắt đầu thẻ find */
+    .find_span{
+        color: #FFFFFF;
+        font-size: 2vw;
+        min-font-size: 2vw;
+    }
+    .find_span_left{
+        color: #171717;
+        font-size: 2vw;
+        min-font-size: 2vw;
+    }
+    .main_find_left,.main_find_center,.main_find_right{
+        border: 0.15vw solid #FFFFFF;
+    }
+/*    Bắt đầy nav */
+    .carousel-indicators {
+        position: absolute;
+        top: 96.5%;
+    }
+    /*bắt đầu thẻ pur múcic*/
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        border: 0.1vw solid #171717;
+    }
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        border: 0.1vw solid #171717;
+    }
+/*    bắt đầu thẻ lasst new */
+    .carousel-caption_ln{
+        padding: 6vw 0;
+        margin-bottom: 6vw;
+    }
+}
+
+/*250%*/
+@media (max-width: 614px) {
+    .container-fluid.header{
+        min-height: 7.2vw;
+    }
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        min-height: 7.2vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        min-height: 7.2vw;
+    }
+    .d-flex.menu.border-right-vw{
+        min-height: 7.2vw;
+    }
+    .container-fluid.header:before{
+        border: 0.08vw solid #000000;
+        padding: 1.6vw 1.6vw;
+        position: absolute;
+        left: 8vw;
+        top: 2vw;
+        border-radius: 0.3vw;
+    }
+    .burger{
+        position: absolute;
+        left: 3.5vw;
+        top: 2.2vw;
+    }
+    .burger__patty {
+        width: 5.2vw;
+        height: 6.25vw;
+        margin: 0 0 3.5vw 0;
+    }
+    .menu_heard{
+        margin-top: 7.2vw;
+    }
+    .img-responsive{
+        max-width: 55%;
+        /*max-height: 3.6vw;*/
+    }
+    .fas{
+        font-size: 3vw;
+    }
+/*    Bắt đầu thẻ find */
+    .find_span{
+        color: #FFFFFF;
+        font-size: 2vw;
+        min-font-size: 2vw;
+    }
+    .find_span_left{
+        color: #171717;
+        font-size: 2vw;
+        min-font-size: 2vw;
+    }
+    .main_find_left,.main_find_center,.main_find_right{
+        border: 0.15vw solid #FFFFFF;
+    }
+    /*bắt đầu thẻ nav*/
+    .carousel-indicators {
+        position: absolute;
+        top: 95%;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 93%;
+        width: 20%;
+        font-size: 30px;
+    }
+    .prev_arrow_2{
+        border-width: 0 0.7vw 0.7vw 0;
+        padding: 1vw;
+        position: absolute;
+        left: 7vw;
+        top: 3.5vw;
+    }
+    .prev_line_2{
+        width: 5.5vw;
+        border-width: 0.7vw 0 0 0;
+        position: absolute;
+        left: 7vw;
+        top: 4.5vw;
+    }
+
+    .next_arrow_2{
+        border-width: 0 0.7vw 0.7vw 0;
+        padding: 1vw;
+        position: absolute;
+        left: -3.2vw;
+        top: 0;
+    }
+    .next_line_2{
+        width: 5.5vw;
+        border-width: 0.7vw 0 0 0;
+        position: absolute;
+        left: -3.2vw;
+        top: 1vw;
+    }
+    /*bắt đầu thẻ pur múcic*/
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        border: 0.12vw solid #171717;
+    }
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        border: 0.12vw solid #171717;
+    }
+/*    bắt đầu thẻ last new */
+    .carousel-caption_ln{
+        padding: 8vw 0;
+        margin-bottom: 8vw;
+    }
+}
+/* 300 */
+@media (max-width: 512px) {
+    .container-fluid.header{
+        min-height: 10vw;
+    }
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        min-height: 10vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        min-height: 10vw;
+    }
+    .d-flex.menu.border-right-vw{
+        min-height: 10vw;
+    }
+    .container-fluid.header:before{
+        border: 0.1vw solid #000000;
+        padding: 1.8vw 1.8vw;
+        position: absolute;
+        left: 7.4vw;
+        top: 3.2vw;
+        border-radius: 0.3vw;
+    }
+    .burger{
+        position: absolute;
+        left: 2.2vw;
+        top: 3.8vw;
+    }
+    .burger__patty {
+        width: 4.2vw;
+        height: 2.25vw;
+        margin: 0 0 2.5vw 0;
+    }
+    .img-responsive{
+        max-width: 60%;
+        /*max-height: 3.6vw;*/
+    }
+    .fas{
+        font-size: 4vw;
+    }
+    .menu_heard{
+        margin-top: 10vw;
+    }
+    .find_span{
+        color: #FFFFFF;
+        font-size: 2.5vw;
+        min-font-size: 2.5vw;
+    }
+    .find_span_left{
+        color: #171717;
+        font-size: 2.5vw;
+        min-font-size: 2.5vw;
+    }
+    .main_find_left,.main_find_center,.main_find_right{
+        border: 0.2vw solid #FFFFFF;
+    }
+    /*bắt đầu thẻ nav*/
+    .carousel-indicators {
+        position: absolute;
+        top: 94.5%;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 93%;
+        width: 20%;
+        font-size: 30px;
+    }
+    .prev_arrow_2{
+        border-width: 0 0.7vw 0.7vw 0;
+        padding: 1vw;
+        position: absolute;
+        left: 7vw;
+        top: 3.5vw;
+    }
+    .prev_line_2{
+        width: 5.5vw;
+        border-width: 0.7vw 0 0 0;
+        position: absolute;
+        left: 7vw;
+        top: 4.5vw;
+    }
+
+    .next_arrow_2{
+        border-width: 0 0.7vw 0.7vw 0;
+        padding: 1vw;
+        position: absolute;
+        left: -3.2vw;
+        top: 0;
+    }
+    .next_line_2{
+        width: 5.5vw;
+        border-width: 0.7vw 0 0 0;
+        position: absolute;
+        left: -3.2vw;
+        top: 1vw;
+    }
+    /*bắt đầu thẻ pur múcic*/
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        border: 0.15vw solid #171717;
+        padding: 2% 30% 2% 36%;
+    }
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        border: 0.15vw solid #171717;
+        padding: 2% 30% 2% 36%;
+    }
+/*    bắt đầu thẻ spory*/
+
+    .main_music_bottom_content_artmusic{
+        font-size: 100%;
+    }
+
+    .main_music_bottom_content_richardorlinski{
+        font-size: 150%;
+    }
+
+    .main_music_bottom_content_link_learmore{
+        padding: 3% 30%;
+        font-size: 100%;
+    }
+    /*    bắt đầu thẻ last new */
+    .carousel-caption_ln{
+        padding: 15vw 0;
+        margin-bottom: 15vw;
+    }
+    .carousel-control_ln {
+        position: absolute;
+        top: 93%;
+    }
+    .carousel-indicators_ln {
+        position: absolute;
+        top: 93%;
+    }
+}
+/*400*/
+@media (max-width: 390px) {
+    .container-fluid.header{
+        min-height: 13vw;
+    }
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        min-height: 13vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        min-height: 13vw;
+    }
+    .d-flex.menu.border-right-vw{
+        min-height: 13vw;
+    }
+    .container-fluid.header:before{
+        border: 0.18vw solid #000000;
+        padding: 2vw 2vw;
+        position: absolute;
+        left: 7.5vw;
+        top: 4.5vw;
+        border-radius: 0.3vw;
+    }
+    .burger{
+        position: absolute;
+        left: 0.5vw;
+        top: 5.2vw;
+    }
+    .burger__patty {
+        width: 5.2vw;
+        height: 4.25vw;
+        margin: 0 0 2.5vw 0;
+    }
+    .img-responsive{
+        max-width: 75%;
+        /*max-height: 3.6vw;*/
+    }
+    .fas{
+        font-size: 4.5vw;
+    }
+    .menu_heard{
+        margin-top: 13vw;
+    }
+/*    bắt đầu video */
+    #main-video_myBtn {
+        position: absolute;
+        bottom: 2vw;
+        right: 0.5vw;
+        width: 20%;
+    }
+/*    bắt đầu thẻ find */
+    .find_span{
+        color: #FFFFFF;
+        font-size: 3vw;
+        min-font-size: 3vw;
+    }
+    .find_span_left{
+        color: #171717;
+        font-size: 3vw;
+        min-font-size: 3vw;
+    }
+    .main_find_left,.main_find_center,.main_find_right{
+        border: 0.25vw solid #FFFFFF;
+    }
+/*    Bắt đầu thẻ Nav*/
+    .carousel-indicators {
+        position: absolute;
+        top: 92.5%;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 91%;
+        width: 20%;
+        font-size: 30px;
+    }
+    .prev_arrow_2{
+        border-width: 0 0.9vw 0.9vw 0;
+        padding: 1.3vw;
+        position: absolute;
+        left: 7vw;
+        top: 3.5vw;
+    }
+    .prev_line_2{
+        width: 6.5vw;
+        border-width: 0.9vw 0 0 0;
+        position: absolute;
+        left: 7vw;
+        top: 4.8vw;
+    }
+
+    .next_arrow_2{
+        border-width: 0 0.9vw 0.9vw 0;
+        padding: 1.3vw;
+        position: absolute;
+        left: -3vw;
+        top: 1.8vw;
+    }
+    .next_line_2{
+        width: 6.5vw;
+        border-width: 0.9vw 0 0 0;
+        position: absolute;
+        left: -3vw;
+        top: 3vw;
+    }
+    /*bắt đầu thẻ pur múcic*/
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        border: 0.15vw solid #171717;
+        padding: 2% 26% 2% 30%;
+    }
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        border: 0.15vw solid #171717;
+        padding: 2% 26% 2% 30%;
+    }
+/*    bắt đầu thẻ music */
+    .main_music_bottom_content_artmusic{
+        font-size: 80%;
+    }
+
+    .main_music_bottom_content_richardorlinski{
+        font-size: 120%;
+    }
+
+    .main_music_bottom_content_link_learmore{
+        padding: 3% 28%;
+        font-size: 80%;
+    }
+}
+/* 500 */
+@media (max-width: 308px) {
+    .container-fluid.header{
+        min-height: 13vw;
+    }
+    .d-flex.align-self-center.justify-content-center.flex-wrap.align-items-center.small-hulot.header.text-uppercase.maxmin-vh-header.border-left-vw.border-right-vw{
+        min-height: 13vw;
+    }
+    .row.align-self-center.justify-content-center.flex-wrap.small-hulot.align-items-center.header.text-uppercase.maxmin-vh-header{
+        min-height: 13vw;
+    }
+    .d-flex.menu.border-right-vw{
+        min-height: 13vw;
+    }
+    .container-fluid.header:before{
+        border: 0.18vw solid #000000;
+        padding: 2vw 2vw;
+        position: absolute;
+        left: 7.5vw;
+        top: 4.5vw;
+        border-radius: 0.3vw;
+    }
+    .burger{
+        position: absolute;
+        left: -1.2vw;
+        top: 5.2vw;
+    }
+    .burger__patty {
+        width: 5.2vw;
+        height: 4.25vw;
+        margin: 0 0 2.5vw 0;
+    }
+    .img-responsive{
+        max-width: 75%;
+        /*max-height: 3.6vw;*/
+    }
+    .fas{
+        font-size: 4.5vw;
+    }
+    .menu_heard{
+        margin-top: 13vw;
+    }
+    /*bắt đầu thẻ vi deo*/
+    #main-video_myBtn {
+        position: absolute;
+        bottom: 2vw;
+        right: 1.5vw;
+        width: 24%;
+    }
+/*    Bắt đầu thẻ Nav */
+    .carousel-indicators {
+        position: absolute;
+        top: 90.8%;
+    }
+    .carousel-control {
+        position: absolute;
+        top: 90%;
+        width: 20%;
+        font-size: 30px;
+    }
+    .prev_arrow_2{
+        border-width: 0 0.9vw 0.9vw 0;
+        padding: 1.3vw;
+        position: absolute;
+        left: 7vw;
+        top: 3.5vw;
+    }
+    .prev_line_2{
+        width: 6.5vw;
+        border-width: 0.9vw 0 0 0;
+        position: absolute;
+        left: 7vw;
+        top: 4.8vw;
+    }
+
+    .next_arrow_2{
+        border-width: 0 0.9vw 0.9vw 0;
+        padding: 1.3vw;
+        position: absolute;
+        left: -3vw;
+        top: 4.2vw;
+    }
+    .next_line_2{
+        width: 6.5vw;
+        border-width: 0.9vw 0 0 0;
+        position: absolute;
+        left: -3vw;
+        top: 5.4vw;
+    }
+/*    bắt đầu thẻ ourr music */
+    .main_ourworld_content_right_bottom_content_partnerships{
+        font-size: 120%;
+    }
+/*    Bắt đầu thẻ music*/
+    .main_music_bottom_content_artmusic{
+        font-size: 80%;
+    }
+
+    .main_music_bottom_content_richardorlinski{
+        font-size: 120%;
+    }
+
+    .main_music_bottom_content_link_learmore{
+        padding: 3% 26%;
+        font-size: 80%;
+    }
+}

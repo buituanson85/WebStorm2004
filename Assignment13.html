@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= UTF-8 >
+    <title>Title</title>
+</head>
+<body>
+<!--<select id="select">-->
+<!--    <option value="Hanoi,vietnam">Hanoi</option>-->
+<!--    <option value="Saigon,vietnam">Saigon</option>-->
+<!--    <option value="haiphong,vietnam">haiphong</option>-->
+<!--    <option value="London,uk">London</option>-->
+<!--</select>-->
+<h1>Dự báo thời tiết</h1>
+<!--<h3 id="time"></h3>-->
+<!--<h3 id="temp"></h3>-->
+<!--<h3 id="des"></h3>-->
+<ul id="ul"></ul>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    // let api_url = "https://samples.openweathermap.org/data/2.5/forecast/hourly?zip=94040&appid=439d4b804bc8187953eb36d2a8c26a02";
+    // axios.get(api_url).then(function (rs) {
+    //     console.log(rs);
+    // })
+    // $.ajax({
+    //     url: api_url,
+    //     method: "GET",
+    //     type: "application/json",
+    //     success: function (rs) {
+    //         $("#city").text(rs.name+" - "+rs.sys.country)
+    //         $("#temp").text(rs.main.temp);
+    //         $("#press").text(rs.main.pressure);
+    //         $("#hum").text(rs.main.humidity);
+    //         $("#temp_min").text(rs.main.temp_min);
+    //         $("#temp_max").text(rs.main.temp_max);
+    //         $("#sea-lv").text(rs.main.sea_level);
+    //     }
+    // });
+    let api_url = "http://api.openweathermap.org/data/2.5/forecast";
+        $.ajax({
+            url: api_url,
+            method: "GET",
+            data:{
+                q:"Hanoi,vietnam",
+                appid:"09a71427c59d38d6a34f89b47d75975c",
+                units:"metric"
+            },
+            success: function (rs) {
+                let ls = rs.list;
+                let ul= document.getElementById("ul");
+                for(let i=0 ; i<ls.length ; i++){
+                    let li_html = "<li>" + ls[i].main.temp +"      "+ ls[i].dt_txt+"</li>";
+                    ul.innerHTML +=li_html;
+                }
+            }
+        });
+    // succes: function rs() {
+    //     let ls = rs.list;
+    //     for(let i=0 ; i<ls.length ; i++){
+    //         let li_html = "<li>" + ls[i].main.temp + ls[i].dt_txt;
+    //         ul.innerHTML +=li_html;
+    //     }
+    // }
+</script>
+</body>
+</html>
